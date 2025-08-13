@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Bem e o Mal - Luiz de Castro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #1a3d2e 0%, #2d5a3d 50%, #0f2419 100%); }
+        .book-shadow { box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4); }
+        .amazon-btn { background: linear-gradient(135deg, #ff9500 0%, #ff8c00 100%); }
+        .amazon-btn:hover { background: linear-gradient(135deg, #ff8c00 0%, #ff7700 100%); }
+        
+        /* Ocultar apenas sidebar específica do BlogSpot - SEM afetar nossa página */
+        .blogger-sidebar,
+        .blog-sidebar,
+        .widget-area:not(main .widget-area):not(section .widget-area),
+        .right-sidebar:not(main .right-sidebar):not(section .right-sidebar),
+        .left-sidebar:not(main .left-sidebar):not(section .left-sidebar) {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            position: absolute !important;
+            left: -9999px !important;
+        }
+
+    </style>
+</head>
+<body class="font-inter text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <div class="font-playfair text-2xl font-bold text-green-800">Luiz de Castro</div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#sobre" class="text-gray-700 hover:text-green-800 transition-colors">Sobre o Livro</a>
+                <a href="#autor" class="text-gray-700 hover:text-green-800 transition-colors">Autor</a>
+                <a href="#conteudo" class="text-gray-700 hover:text-green-800 transition-colors">Conteúdo</a>
+                <a href="#versoes" class="text-gray-700 hover:text-green-800 transition-colors">Versões</a>
+            </nav>
+            <button onclick="window.open('https://www.amazon.com.br/Bem-Mal-Defeitos-Virtudes-Definem-ebook/dp/B0FKTD3WKH/ref=sr_1_1?crid=10TL980UB4U64&dib=eyJ2IjoiMSJ9.SHINi53Psl1zfjFl5k902zIHBMW1sqTj3-l0XwiL531KA0NsVfTViblEwUdAMxS2D9gIaItReuyWJspoIKEQE3fklHJlEQImpjh_9Nn_Kc4.oB3SpU9K87rN9tgdF2Q0dQPe6IFT07Y-aK9sMrubfsM&dib_tag=se&keywords=livros+de+luiz+de+castro%2C+o+bem+e+o+mal&qid=1754964634&sprefix=%2Caps%2C395&sr=8-1', '_blank')" class="amazon-btn text-white px-6 py-2 rounded-lg hover:scale-105 transition-all font-medium">
+                Comprar na Amazon
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white pt-24 pb-16 lg:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="font-playfair text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                        O Bem <span class="text-yellow-400">e</span> o <span class="text-yellow-400">Mal</span>
+                    </h1>
+                    <p class="text-xl lg:text-2xl mb-4 text-gray-200 font-light italic">
+                        Defeitos e Virtudes que nos Definem
+                    </p>
+                    <p class="text-lg mb-8 text-gray-300 leading-relaxed">
+                        Uma profunda reflexão sobre a natureza humana e o espelho da alma. 
+                        Descubra como nossos defeitos e virtudes moldam quem somos e como podemos 
+                        crescer através do autoconhecimento e da transformação interior.
+                    </p>
+                    <div class="bg-white bg-opacity-10 p-6 rounded-xl mb-8 backdrop-blur-sm">
+                        <div class="flex items-center justify-center lg:justify-start space-x-8">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-yellow-400">R$ 25,21</div>
+                                <div class="text-sm text-gray-300">E-book</div>
+                            </div>
+                            <div class="h-12 w-px bg-gray-400"></div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-yellow-400">R$ 81,97</div>
+                                <div class="text-sm text-gray-300">Livro Impresso</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button onclick="window.open('https://www.amazon.com.br/Bem-Mal-Defeitos-Virtudes-Definem-ebook/dp/B0FKTD3WKH/ref=sr_1_1?crid=10TL980UB4U64&dib=eyJ2IjoiMSJ9.SHINi53Psl1zfjFl5k902zIHBMW1sqTj3-l0XwiL531KA0NsVfTViblEwUdAMxS2D9gIaItReuyWJspoIKEQE3fklHJlEQImpjh_9Nn_Kc4.oB3SpU9K87rN9tgdF2Q0dQPe6IFT07Y-aK9sMrubfsM&dib_tag=se&keywords=livros+de+luiz+de+castro%2C+o+bem+e+o+mal&qid=1754964634&sprefix=%2Caps%2C395&sr=8-1', '_blank')" class="amazon-btn text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-all flex items-center justify-center space-x-2">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 8.16 3.197 12.789 3.197 6.252 0 11.896-2.313 15.955-6.174.102-.097.237-.097.348.022l1.252 1.408c.116.129.097.329-.044.425-4.516 3.86-10.57 6.221-17.553 6.221-6.768 0-12.691-2.282-17.016-6.102-.143-.124-.158-.315-.051-.449l1.072-1.526z"/>
+                                <path d="M20.596 9.44c0 2.623-.492 4.849-1.476 6.678-.984 1.829-2.353 3.253-4.107 4.272-1.754 1.019-3.727 1.529-5.918 1.529-2.191 0-4.164-.51-5.918-1.529-1.754-1.019-3.123-2.443-4.107-4.272C-.414 14.289-.906 12.063-.906 9.44c0-2.623.492-4.849 1.476-6.678.984-1.829 2.353-3.253 4.107-4.272C6.431-2.529 8.404-3.039 10.595-3.039c2.191 0 4.164.51 5.918 1.529 1.754 1.019 3.123 2.443 4.107 4.272.984 1.829 1.476 4.055 1.476 6.678z"/>
+                            </svg>
+                            <span>Comprar na Amazon</span>
+                        </button>
+                        <button onclick="document.getElementById('preview').scrollIntoView({behavior: 'smooth'})" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-green-800 transition-colors">
+                            Ler Prévia
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/capa.jpg" alt="Capa do livro O Bem e o Mal - Defeitos e Virtudes que nos Definem" class="max-w-sm w-full book-shadow rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre o Livro -->
+    <section id="sobre" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-4xl font-bold text-gray-800 mb-4">O Espelho da Alma</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Uma jornada introspectiva através dos aspectos que definem o ser humano
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-800" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold mb-3">Autoconhecimento</h3>
+                    <p class="text-gray-600">Ferramentas para identificar e compreender nossos padrões comportamentais e emocionais</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-800" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold mb-3">Transformação</h3>
+                    <p class="text-gray-600">Caminhos práticos para o crescimento pessoal e desenvolvimento de virtudes</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-green-800" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-xl font-bold mb-3">Equilíbrio</h3>
+                    <p class="text-gray-600">Estratégias para harmonizar os aspectos sombrios e luminosos de nossa personalidade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Versões Disponíveis -->
+    <section id="versoes" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-4xl font-bold text-gray-800 mb-4">Versões Disponíveis</h2>
+                <p class="text-xl text-gray-600">Escolha a versão que melhor se adapta ao seu estilo de leitura</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-xl shadow-lg text-center border-2 border-blue-200">
+                    <div class="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
+                            <path fill-rule="evenodd" d="M4 5a2 2 0 012-2v1a3 3 0 003 3h2a3 3 0 003-3V3a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 2a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1zm0 2a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1zm0 2a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold mb-3 text-gray-800">E-book</h3>
+                    <div class="text-3xl font-bold text-blue-600 mb-2">R$ 25,21</div>
+                    <ul class="text-gray-700 text-left mb-6 space-y-2">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Entrega instantânea</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Leitura em qualquer dispositivo</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Função de busca</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Ajuste de fonte</li>
+                    </ul>
+                    <button onclick="window.open('https://www.amazon.com.br/Bem-Mal-Defeitos-Virtudes-Definem-ebook/dp/B0FKTD3WKH/ref=sr_1_1?crid=10TL980UB4U64&dib=eyJ2IjoiMSJ9.SHINi53Psl1zfjFl5k902zIHBMW1sqTj3-l0XwiL531KA0NsVfTViblEwUdAMxS2D9gIaItReuyWJspoIKEQE3fklHJlEQImpjh_9Nn_Kc4.oB3SpU9K87rN9tgdF2Q0dQPe6IFT07Y-aK9sMrubfsM&dib_tag=se&keywords=livros+de+luiz+de+castro%2C+o+bem+e+o+mal&qid=1754964634&sprefix=%2Caps%2C395&sr=8-1', '_blank')" class="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+                        Comprar E-book
+                    </button>
+                </div>
+                <div class="bg-gradient-to-br from-amber-50 to-orange-100 p-8 rounded-xl shadow-lg text-center border-2 border-amber-200">
+                    <div class="w-16 h-16 bg-amber-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-playfair text-2xl font-bold mb-3 text-gray-800">Livro Impresso</h3>
+                    <div class="text-3xl font-bold text-amber-600 mb-2">R$ 81,97</div>
+                    <ul class="text-gray-700 text-left mb-6 space-y-2">
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Papel de qualidade</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Experiência tátil única</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Ideal para presentes</li>
+                        <li class="flex items-center"><span class="text-green-500 mr-2">✓</span>Sem dependência de bateria</li>
+                    </ul>
+                    <button onclick="window.open('https://www.amazon.com.br/Bem-Mal-Defeitos-Virtudes-Definem-ebook/dp/B0FKTD3WKH/ref=sr_1_1?crid=10TL980UB4U64&dib=eyJ2IjoiMSJ9.SHINi53Psl1zfjFl5k902zIHBMW1sqTj3-l0XwiL531KA0NsVfTViblEwUdAMxS2D9gIaItExGZrr2.oB3SpU9K87rN9tgdF2Q0dQPe6IFT07Y-aK9sMrubfsM&dib_tag=se&keywords=livros+de+luiz+de+castro%2C+o+bem+e+o+mal&qid=1754964634&sprefix=%2Caps%2C395&sr=8-1', '_blank')" class="w-full bg-amber-600 text-white px-6 py-3 rounded-lg hover:bg-amber-700 transition-colors font-semibold">
+                        Comprar Impresso
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autor -->
+    <section id="autor" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="font-playfair text-4xl font-bold text-gray-800 mb-6">Sobre o Autor</h2>
+                    <h3 class="font-playfair text-2xl font-semibold text-green-800 mb-4">Luiz de Castro</h3>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Mestre em Gestão e administrador de empresas, Luiz de Castro é professor universitário 
+                        há mais de 25 anos, atuando nas disciplinas das Ciências Sociais Aplicadas. Além de sua 
+                        carreira acadêmica, é também poeta, escritor e compositor.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
+                        Ao longo de sua trajetória, tem se dedicado ao estudo dos aspectos que definem 
+                        o caráter humano, explorando tanto as virtudes quanto os defeitos que moldam nossa 
+                        experiência existencial. Suas obras são reconhecidas pela capacidade de unir reflexão 
+                        profunda com aplicação prática, sempre com uma abordagem acessível e humanizada.
+                    </p>
+                    <div class="flex space-x-4">
+                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Professor</span>
+                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Escritor</span>
+                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Poeta</span>
+                        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Compositor</span>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="images/autor.jpg" alt="Foto do autor Luiz de Castro" class="w-80 h-80 object-cover rounded-full shadow-lg border-4 border-green-200">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prévia -->
+    <section id="preview" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-playfair text-4xl font-bold text-gray-800 mb-4">Prévia do Conteúdo</h2>
+                <p class="text-xl text-gray-600">Uma amostra do que você encontrará no livro</p>
+            </div>
+            <div class="bg-gray-50 p-8 rounded-xl border-l-4 border-green-600">
+                <blockquote class="text-lg text-gray-700 italic leading-relaxed mb-4">
+                    "O ser humano é uma síntese fascinante de luz e sombra, virtude e defeito, grandeza e pequenez. 
+                    Não somos nem anjos nem demônios, mas algo infinitamente mais complexo e interessante: somos humanos. 
+                    E é justamente nesta dualidade que reside tanto nosso maior desafio quanto nossa maior oportunidade de crescimento."
+                </blockquote>
+                <cite class="font-semibold text-green-800">— Luiz de Castro, "O Bem e o Mal"</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="gradient-bg text-white py-16">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 class="font-playfair text-4xl font-bold mb-6">Inicie sua jornada de autoconhecimento</h2>
+            <p class="text-xl mb-8 text-gray-200">
+                Descubra os aspectos que definem quem você é e transforme-se através desta reflexão profunda
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <button onclick="window.open('https://www.amazon.com.br/Bem-Mal-Defeitos-Virtudes-Definem-ebook/dp/B0FKTD3WKH/ref=sr_1_1?crid=10TL980UB4U64&dib=eyJ2IjoiMSJ9.SHINi53Psl1zfjFl5k902zIHBMW1sqTj3-l0XwiL531KA0NsVfTViblEwUdAMxS2D9gIaItReuyWJspoIKEQE3fklHJlEQImpjh_9Nn_Kc4.oB3SpU9K87rN9tgdF2Q0dQPe6IFT07Y-aK9sMrubfsM&dib_tag=se&keywords=livros+de+luiz+de+castro%2C+o+bem+e+o+mal&qid=1754964634&sprefix=%2Caps%2C395&sr=8-1', '_blank')" class="amazon-btn text-white px-8 py-4 rounded-lg font-semibold text-lg hover:scale-105 transition-all flex items-center justify-center space-x-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 8.16 3.197 12.789 3.197 6.252 0 11.896-2.313 15.955-6.174.102-.097.237-.097.348.022l1.252 1.408c.116.129.097.329-.044.425-4.516 3.86-10.57 6.221-17.553 6.221-6.768 0-12.691-2.282-17.016-6.102-.143-.124-.158-.315-.051-.449l1.072-1.526z"/>
+                        <path d="M20.596 9.44c0 2.623-.492 4.849-1.476 6.678-.984 1.829-2.353 3.253-4.107 4.272-1.754 1.019-3.727 1.529-5.918 1.529-2.191 0-4.164-.51-5.918-1.529-1.754-1.019-3.123-2.443-4.107-4.272C-.414 14.289-.906 12.063-.906 9.44c0-2.623.492-4.849 1.476-6.678.984-1.829 2.353-3.253 4.107-4.272C6.431-2.529 8.404-3.039 10.595-3.039c2.191 0 4.164.51 5.918 1.529 1.754 1.019 3.123 2.443 4.107 4.272.984 1.829 1.476 4.055 1.476 6.678z"/>
+                    </svg>
+                    <span>Comprar na Amazon</span>
+                </button>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                <div class="text-center bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur-sm">
+                    <div class="text-2xl font-bold text-yellow-400 mb-1">E-book</div>
+                    <div class="text-lg">R$ 25,21</div>
+                </div>
+                <div class="text-center bg-white bg-opacity-10 p-4 rounded-lg backdrop-blur-sm">
+                    <div class="text-2xl font-bold text-yellow-400 mb-1">Impresso</div>
+                    <div class="text-lg">R$ 81,97</div>
+                </div>
+            </div>
+            <p class="text-gray-300 mt-6">
+                ✓ Disponível na Amazon • ✓ Entrega rápida • ✓ Pagamento seguro
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="font-playfair text-2xl font-bold mb-4">Luiz de Castro</div>
+                    <p class="text-gray-400">Explorando as profundezas da alma humana através da literatura.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Onde Comprar</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="https://www.amazon.com.br/Bem-Mal-Defeitos-Virtudes-Definem-ebook/dp/B0FKTD3WKH/ref=sr_1_1?crid=10TL980UB4U64&dib=eyJ2IjoiMSJ9.SHINi53Psl1zfjFl5k902zIHBMW1sqTj3-l0XwiL531KA0NsVfTViblEwUdAMxS2D9gIaItReuyWJspoIKEQE3fklHJlEQImpjh_9Nn_Kc4.oB3SpU9K87rN9tgdF2Q0dQPe6IFT07Y-aK9sMrubfsM&dib_tag=se&keywords=livros+de+luiz+de+castro%2C+o+bem+e+o+mal&qid=1754964634&sprefix=%2Caps%2C395&sr=8-1" target="_blank" class="hover:text-white">Amazon Brasil</a></li>
+                        <li><a href="#" class="hover:text-white">Kindle Unlimited</a></li>
+                        <li><a href="#" class="hover:text-white">Livrarias Parceiras</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg mb-4">Contato</h3>
+                    <div class="text-gray-400">
+                        <p>Para mais informações sobre</p>
+                        <p>a obra do autor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Luiz de Castro. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Proteção simples e segura contra sidebar
+        function hideSidebar() {
+            try {
+                // Lista específica de elementos do BlogSpot que devem ser escondidos
+                const sidebarSelectors = [
+                    '.blogger-sidebar',
+                    '.blog-sidebar'
+                ];
+                
+                sidebarSelectors.forEach(selector => {
+                    const elements = document.querySelectorAll(selector);
+                    elements.forEach(element => {
+                        element.style.display = 'none';
+                        element.style.visibility = 'hidden';
+                        element.style.opacity = '0';
+                    });
+                });
+            } catch(e) {
+                // Ignora erros
+            }
+        }
+        
+        // Executa apenas algumas vezes
+        setTimeout(hideSidebar, 1000);
+        setTimeout(hideSidebar, 2000);
+        document.addEventListener('DOMContentLoaded', hideSidebar);
+
+        // Smooth scrolling para links de navegação
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Efeito de scroll no header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (header && window.scrollY > 100) {
+                header.classList.add('bg-opacity-95');
+            } else if (header) {
+                header.classList.remove('bg-opacity-95');
+            }
+        });
+    </script>
+</body>
+</html>
+
